@@ -5,35 +5,35 @@ import { motion } from 'framer-motion';
 export const CustomerReviewsSection = () => {
   const reviews = [
     {
-      name: "Alex Johnson",
-      role: "CEO, TechStart Inc.",
-      content: "The logo designs exceeded our expectations. The team delivered creative concepts that perfectly captured our brand identity."
+      content:
+        "The video editing transformed our raw footage into a cinematic masterpiece. The pacing, transitions, and color grading were all perfect.",
+      service: "Video Editing",
     },
     {
-      name: "Sarah Williams",
-      role: "Marketing Director",
-      content: "Working with this design team was a game-changer for our social media presence. Their thumbnails increased our CTR by 40%."
+      content:
+        "Our click-through rates doubled after using these thumbnails. The editor perfectly captured the video's most engaging moments.",
+      service: "Thumbnail Design",
     },
     {
-      name: "Michael Chen",
-      role: "Product Manager",
-      content: "The video reels helped us showcase our product features in an engaging way, leading to a 25% boost in conversions."
+      content:
+        "The trailer edited for our game generated massive hype. The editor knew exactly which moments would hook our audience.",
+      service: "Trailer Editing",
     },
     {
-      name: "Emily Rodriguez",
-      role: "Creative Director",
-      content: "Their artwork transformed our brand visuals. We've received countless compliments on the new designs."
+      content:
+        "Consistent, high-quality edits delivered on tight deadlines. Our weekly content has never looked better.",
+      service: "Video Editing",
     },
     {
-      name: "David Kim",
-      role: "Founder, StartupXYZ",
-      content: "The Minecraft trailers they created for our game went viral, driving thousands of new players to our platform."
+      content:
+        "The logo animations created for our intro sequences gave our brand instant recognition. Simple but extremely effective.",
+      service: "Logo Animation",
     },
     {
-      name: "Michael Santh",
-      role: "Founder, Ikorna",
-      content: "The Minecraft trailers they created for our game went viral, driving thousands of new players to our platform."
-    }
+      content:
+        "The Video animations created for our intro sequences gave our brand instant recognition. Simple but extremely effective.",
+      service: "Video Animation",
+    },
   ];
 
   return (
@@ -63,8 +63,8 @@ export const CustomerReviewsSection = () => {
                 "{review.content}"
               </div>
               <div className="text-white">
-                <p className="text-2xl font-bold">{review.name}</p>
-                <p className="text-gray-400">{review.role}</p>
+                <p className="text-2xl font-bold">{review.service}</p>
+                <p className="text-gray-400">{review.service}</p>
               </div>
             </motion.div>
           ))}
