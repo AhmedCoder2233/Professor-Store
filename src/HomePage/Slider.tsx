@@ -248,6 +248,7 @@ export const MinecraftTrailerSection = () => {
                 loop
                 muted
                 playsInline
+                controls
                 className="w-full h-auto"
                 style={{ aspectRatio: "16/9" }}
               />
