@@ -7,32 +7,32 @@ export const CustomerReviewsSection = () => {
     {
       content:
         "The video editing transformed our raw footage into a cinematic masterpiece. The pacing, transitions, and color grading were all perfect.",
-      service: "Video Editing",
+      service: "Alex",
     },
     {
       content:
         "Our click-through rates doubled after using these thumbnails. The editor perfectly captured the video's most engaging moments.",
-      service: "Thumbnail Design",
+      service: "James",
     },
     {
       content:
         "The trailer edited for our game generated massive hype. The editor knew exactly which moments would hook our audience.",
-      service: "Trailer Editing",
+      service: "Michael Dank",
     },
     {
       content:
         "Consistent, high-quality edits delivered on tight deadlines. Our weekly content has never looked better.",
-      service: "Video Editing",
+      service: "Jimmy",
     },
     {
       content:
         "The logo animations created for our intro sequences gave our brand instant recognition. Simple but extremely effective.",
-      service: "Logo Animation",
+      service: "Anderson",
     },
     {
       content:
         "The Video animations created for our intro sequences gave our brand instant recognition. Simple but extremely effective.",
-      service: "Video Animation",
+      service: "David",
     },
   ];
 
