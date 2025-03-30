@@ -17,9 +17,7 @@ const HeroHeader = () => {
 
   const navItems = [
     { name: 'Home', href: '#home' },
-    { name: 'Portfolio', href: '#portfolio' },
-    { name: 'Services', href: '#services' },
-    { name: 'About', href: '#about' },
+    { name: 'Services', href: '/service-section' },
     { name: 'Contact', href: '#contact' },
   ];
 

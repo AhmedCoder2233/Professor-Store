@@ -1,9 +1,8 @@
-import { ContactSection } from "@/HomePage/Contact";
-import { CustomerReviewsSection } from "@/HomePage/Customer";
-import { Footer } from "@/HomePage/Footer";
-import HeroHeader from "@/HomePage/Hero";
-import { ArtSection, MinecraftTrailerSection, ThumbnailsSection, VideosSection } from "@/HomePage/Slider";
-import Image from "next/image";
+import { ContactSection } from "@/components/HomePage/Contact";
+import { CustomerReviewsSection } from "@/components/HomePage/Customer";
+import { Footer } from "@/components/HomePage/Footer";
+import HeroHeader from "@/components/HomePage/Hero";
+import { ArtSection, MinecraftTrailerSection, ThumbnailsSection, VideosSection } from "@/components/HomePage/Slider";
 
 export default function Home() {
   return (

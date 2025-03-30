@@ -4,12 +4,6 @@ import { motion } from 'framer-motion';
 import { FiInstagram, FiTwitter, FiYoutube, FiGithub } from 'react-icons/fi';
 
 export const Footer = () => {
-  const socialLinks = [
-    { icon: <FiInstagram />, url: "https://instagram.com/yourstudio" },
-    { icon: <FiTwitter />, url: "https://twitter.com/yourstudio" },
-    { icon: <FiYoutube />, url: "https://youtube.com/yourstudio" },
-    { icon: <FiGithub />, url: "https://github.com/yourstudio" }
-  ];
 
   return (
     <footer className="bg-gray-900 border-t border-gray-800">
@@ -21,25 +15,10 @@ export const Footer = () => {
           viewport={{ once: true }}
           className="flex flex-col items-center"
         >
-          {/* Social Links */}
-          <div className="flex space-x-6 mb-6">
-            {socialLinks.map((social, index) => (
-              <motion.a
-                key={index}
-                href={social.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                whileHover={{ y: -3, color: "#f87171" }}
-                className="text-gray-400 text-2xl hover:text-red-400 transition-colors"
-              >
-                {social.icon}
-              </motion.a>
-            ))}
-          </div>
 
           {/* Copyright */}
           <p className="text-gray-500 text-center mb-4">
-            © {new Date().getFullYear()} Your Design Studio. All rights reserved.
+            © {new Date().getFullYear()} Professor Store. All rights reserved.
           </p>
 
           {/* Links */}

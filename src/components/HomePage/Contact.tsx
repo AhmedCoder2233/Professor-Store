@@ -5,30 +5,13 @@ import { FiMail, FiMessageSquare, FiGlobe, FiMapPin } from 'react-icons/fi';
 
 export const ContactSection = () => {
   const contactMethods = [
-    {
-      icon: <FiMail className="text-3xl text-red-400" />,
-      title: "Email Us",
-      value: "xyz@gmail.com",
-      link: "mailto:contact@yourdesignstudio.com"
-    },
+
     {
       icon: <FiMessageSquare className="text-3xl text-red-400" />,
       title: "Discord",
       value: "Call_Me_Professor",
-      link: "https://discord.com/users/yourdesignstudio"
+      link: "https://discord.com/channels/@me/1293223501553205280",
     },
-    {
-      icon: <FiGlobe className="text-3xl text-red-400" />,
-      title: "Website",
-      value: "yourdesignstudio.com",
-      link: "https://yourdesignstudio.com"
-    },
-    {
-      icon: <FiMapPin className="text-3xl text-red-400" />,
-      title: "Location",
-      value: "Pakistan",
-      link: "https://maps.google.com?q=San+Francisco"
-    }
   ];
 
   const containerVariants = {
@@ -55,7 +38,7 @@ export const ContactSection = () => {
   };
 
   return (
-    <section className="py-20 bg-gray-900">
+    <section className="py-20 bg-gray-900" id="contact">
       <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 50 }}
@@ -77,7 +60,7 @@ export const ContactSection = () => {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8"
+          className="flex justify-center"
         >
           {contactMethods.map((method, index) => (
             <motion.a
