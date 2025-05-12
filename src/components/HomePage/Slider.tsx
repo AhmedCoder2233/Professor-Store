@@ -172,6 +172,53 @@ export const ArtSection = () => {
     </section>
   );
 };
+export const ServerIcons = () => {
+  const Icons = [
+    "/again.png",
+    "/icon.png",
+  ];
+
+  return (
+    <section className="py-20 bg-gray-900">
+      <div className="container mx-auto px-4">
+        <motion.h2
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          viewport={{ once: true }}
+          className="text-4xl md:text-5xl font-bold text-center mb-16 text-white"
+        >
+          Our <span className="text-red-400">Server Icons</span>
+        </motion.h2>
+
+        <div className="flex justify-center gap-8 flex-wrap">
+          {Icons.map((logo, index) => (
+            <motion.div
+              key={index}
+              className="w-full sm:w-1/2 md:w-1/3 lg:w-1/5 px-4"
+              style={{ aspectRatio: "2/2" }}
+              whileHover={{ scale: 1.05 }}
+            >
+              <div className="relative overflow-hidden rounded-xl shadow-2xl h-full">
+                <img
+                  src={logo}
+                  alt={`Logo ${index + 1}`}
+                  className="w-full h-full"
+                  loading="lazy"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent flex items-end p-6">
+                  <h3 className="text-xl font-bold text-white">
+                    Icon {index + 1}
+                  </h3>
+                </div>
+              </div>
+            </motion.div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+};
 
 // Minecraft Trailer Section (unchanged)
 export const MinecraftTrailerSection = () => {

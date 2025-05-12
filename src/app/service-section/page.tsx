@@ -10,6 +10,7 @@ import {
   FaServer,
   FaCode,
   FaRobot,
+  FaIcons,
 } from "react-icons/fa";
 import { GiToolbox, GiPaintBrush, GiCommercialAirplane } from "react-icons/gi";
 import { BsFillChatSquareTextFill } from "react-icons/bs";
@@ -78,6 +79,11 @@ const ServicesSection = () => {
       icon: <FaRobot className="text-4xl text-cyan-400" />,
       title: "Chatbot/Bots Development",
       description: "Custom bots for personal assistants, auto emailing etc.",
+    },
+    {
+      icon: <FaIcons className="text-4xl text-cyan-400" />,
+      title: "Server Icons",
+      description: "Custom Eye-Catching Icons for Server's",
     },
   ];
 
@@ -148,7 +154,7 @@ const ServicesSection = () => {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+          className="flex flex-wrap gap-8 justify-center"
         >
           {services.map((service, index) => (
             <motion.div
